@@ -1,0 +1,113 @@
+# macOS Finder inspired (dark) flavor for Yazi
+# Grayscale text only; #a4b9c6 for active text; pill-shaped tabs/status (Nerd Font required)
+[mgr]
+cwd = { fg = "#c7c7cc", bold = true }
+hovered         = { fg = "#a4b9c6", bg = "#3a3a3c" }
+preview_hovered = { fg = "#a4b9c6", bg = "#3a3a3c" }
+find_keyword  = { fg = "#a4b9c6", bold = true, underline = true }
+find_position = { fg = "#98989d", bold = true }
+marker_copied   = { fg = "#9a9a9f", bg = "#9a9a9f" }
+marker_cut      = { fg = "#636366", bg = "#636366" }
+marker_marked   = { fg = "#a4b9c6", bg = "#a4b9c6" }
+marker_selected = { fg = "#a4b9c6", bg = "#a4b9c6" }
+count_copied   = { fg = "#a4b9c6", bg = "#3a3a3c" }
+count_cut      = { fg = "#a4b9c6", bg = "#3a3a3c" }
+count_selected = { fg = "#a4b9c6", bg = "#3a3a3c" }
+border_symbol = "│"
+border_style  = { fg = "#48484a" }
+syntect_theme = "~/.config/yazi/flavors/macos-dark.yazi/tmtheme.xml"
+
+[tabs]
+active   = { fg = "#a4b9c6", bg = "#3a3a3c", bold = true }
+inactive = { fg = "#98989d", bg = "#2c2c2e" }
+sep_inner = { open = "\uE0B6", close = "\uE0B4" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#a4b9c6", bg = "#3a3a3c", bold = true }
+normal_alt  = { fg = "#98989d", bg = "#2c2c2e" }
+select_main = { fg = "#a4b9c6", bg = "#3a3a3c", bold = true }
+select_alt  = { fg = "#98989d", bg = "#2c2c2e" }
+unset_main  = { fg = "#a4b9c6", bg = "#3a3a3c", bold = true }
+unset_alt   = { fg = "#98989d", bg = "#2c2c2e" }
+
+[status]
+overall   = { }
+sep_left  = { open = "\uE0B6", close = "\uE0B4" }
+sep_right = { open = "\uE0B6", close = "\uE0B4" }
+perm_sep   = { fg = "#636366" }
+perm_type  = { fg = "#c7c7cc" }
+perm_read  = { fg = "#9a9a9f" }
+perm_write = { fg = "#9a9a9f" }
+perm_exec  = { fg = "#c7c7cc" }
+progress_label  = { fg = "#e6e6e6", bold = true }
+progress_normal = { fg = "#a4b9c6", bg = "#2c2c2e" }
+progress_error  = { fg = "#98989d", bg = "#2c2c2e" }
+
+[which]
+cols = 3
+mask = { bg = "#2a2a2c" }
+cand = { fg = "#a4b9c6" }
+rest = { fg = "#636366" }
+desc = { fg = "#e6e6e6" }
+separator = "  "
+separator_style = { fg = "#636366" }
+
+[confirm]
+border  = { fg = "#48484a" }
+title   = { fg = "#c7c7cc", bold = true }
+content = { fg = "#e6e6e6" }
+list    = { fg = "#e6e6e6" }
+btn_yes = { fg = "#a4b9c6", bg = "#3a3a3c" }
+btn_no  = { fg = "#98989d", bg = "#2c2c2e" }
+
+[spot]
+border   = { fg = "#48484a" }
+title    = { fg = "#c7c7cc", bold = true }
+tbl_col  = { fg = "#98989d", bold = true }
+tbl_cell = { fg = "#a4b9c6", bg = "#3a3a3c" }
+
+[notify]
+title_info  = { fg = "#a4b9c6" }
+title_warn  = { fg = "#c7c7cc" }
+title_error = { fg = "#c7c7cc", bold = true }
+
+[pick]
+border   = { fg = "#48484a" }
+active   = { fg = "#a4b9c6", bg = "#3a3a3c" }
+inactive = { fg = "#e6e6e6" }
+
+[input]
+border   = { fg = "#48484a" }
+title    = { fg = "#98989d" }
+value    = { fg = "#e6e6e6" }
+selected = { fg = "#a4b9c6", bg = "#3a3a3c" }
+
+[cmp]
+border   = { fg = "#48484a" }
+active   = { fg = "#a4b9c6", bg = "#3a3a3c" }
+inactive = { fg = "#e6e6e6" }
+
+[tasks]
+border  = { fg = "#48484a" }
+title   = { fg = "#c7c7cc", bold = true }
+hovered = { fg = "#a4b9c6", bg = "#3a3a3c" }
+
+[help]
+on      = { fg = "#a4b9c6" }
+run     = { fg = "#c7c7cc" }
+desc    = { fg = "#98989d" }
+hovered = { fg = "#a4b9c6", bg = "#3a3a3c" }
+footer  = { fg = "#e6e6e6" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#9a9a9f" },
+  { mime = "video/*", fg = "#9a9a9f" },
+  { mime = "audio/*", fg = "#9a9a9f" },
+  { mime = "application/*", fg = "#9a9a9f" },
+  { url = "*", is = "orphan", fg = "#636366" },
+  { url = "*", is = "exec", fg = "#c7c7cc" },
+  { url = "*/", fg = "#c7c7cc", bold = true },
+  { url = "*", fg = "#e6e6e6" },
+]
